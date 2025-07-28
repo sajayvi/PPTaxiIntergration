@@ -110,17 +110,21 @@ This integration approach follows Domain-Driven Design principles with a microse
 ### Simplified Data Consistency Model
 
 **Shortcut**: Basic REST transactions without distributed transaction management  
-**Risk**: Potential for booking conflicts or orphaned reservations
+**Risk**: Potential for booking conflicts or orphaned reservations  
+**Solution**: Implement saga pattern or event sourcing for complex multi-service transactions
+
 
 ### Generic Integration API
 
 **Shortcut**: Single integration service handling all external API types  
-**Risk**: Performance bottlenecks, difficult to optimize per-provider
+**Risk**: Performance bottlenecks, difficult to optimize per-provider  
+**Solution**: Split into provider-specific services with dedicated connection pools
 
 ### Manual Timing Calculations
 
 **Shortcut**: Simple algorithmic timing  
-**Risk**: Suboptimal journey recommendations, poor user experience in edge cases
+**Risk**: Poor recommendations during rush hour or delays - users miss flights or waste time  
+**Solution**: Integrate real-time traffic APIs for accurate ETAs
 
 
 ## Use of AI Tools
