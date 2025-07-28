@@ -138,7 +138,7 @@ Used as a technical assistant for:
 
 ### Human Judgment
 
-While AI tools accelerated early ideation, human decision-making was essential in areas where real-world constraints mattered:
+While AI tools accelerated early ideation, human decision-making was essential in areas where real-world constraints mattered 
 
  **Architecture Simplification**: ChatGPT initially proposed a microservices approach with event sourcing. I deliberately reduced the complexity and implemented shared services and modular boundaries instead.
 
