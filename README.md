@@ -88,7 +88,7 @@ This integration approach follows Domain-Driven Design principles with a microse
 
 **Omitted**: WebSocket connections, push notification infrastructure  
 **Rationale**:
-- Complex infrastructure setup
+- Existing notifications systems in both apps can be leveraged initially
 - Real-time updates required for Journey delays due to flight delays etc. will add complexity
 
 #### Comprehensive Error Handling
